@@ -48,12 +48,32 @@ User --> (Use the application) : USE Properties with same Main Admin
  
  
  
- 
-                   PIC 3
+#code
+
+@startuml
+
+AIRBUS -up-|> PLANE
+
+Helicopter -up-|> PLANE
+
+JET -up-|> PLANE
+
+AIRBUS --> (flying)
+
+Helicopter --> (flying):I have a propeller
+
+JET --> (flying)
+
+JET --> (speedfastest): speed of sound
+
+
+@enduml
+
+                   PIC 3 CASE PLANE
                    
                    
                    
- ![](http://www.plantuml.com/plantuml/img/NL2z3e8m4Dxx55-SO921aS60euCEwc3YKk2Kcd8bj1eVt_uGJKoQzBw_krvhw-JidgCMLREh82sQVbGiihCbk84WfqchJZfbE0zo478XjeSBrXjann3F4mmugR679tuC6qUOrNrmCBSq0nLEWxBmHpBeBST9K_5lJNcWGUGxRvNQ6i-q1CEmzA9PQcZ5P0Ln7trBbrKS44j_TuQPEaVzbPtv1atxyAGjLc6xVIcMbL0K0UtBKAH7rBwx_waF)
+ ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU9oz0no2WrMq2qjqAsnKmZmSVHpvV98pSbCpYyeIIr25VTo3K4LW6dMjLFGICkfpCnBrqJHZ2HkvQcGaLYMgf2eK52KNv2QavDQ134FMIzSeBWWDJKbBR6u9BMuHDDA0SnLo4zJACulpKlXud98pKi1kXu0)
  
  
  
