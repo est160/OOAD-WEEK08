@@ -91,7 +91,7 @@ rectangle 7eleven {
 
 @enduml
 
-                   PIC 5
+                   PIC 5 CASE 7eleven
                    
                    
                    
