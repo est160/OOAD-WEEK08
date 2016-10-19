@@ -2,11 +2,27 @@
 
 ## Use Case Diagram
 
+#code
+
+@startuml
+
+User -> (Start The Application)
+
+User --> (Use the application) : USE Properties with same Main Admin
+
+:Main Admin: ---> (Use the application) : EX YOU CAN\nTranfer Money
+
+:Main Admin: ---> (Use the application) : EX YOU CAN\nDeposit
+
+:Main Admin: ---> (Use the application) : EX YOU CAN\nwithdrawal
+
+
+@enduml
 
                    PIC 1 CASE Financial transactions
                    
                    
- ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8ABKujKj2rKz081Wafb6IaAYGM5EHa9YUMPERdQKBbGGg0B0nf1Ik5q61NXO0W_m3Ne11FLuLmpn0FXM17NrS5tyJCF0N7bDpCF2ukAmJ72cWO7jDS8nGY_KCLd1tzOl9AYXBpqe2sv-RdfLQIQKPAQa5-SMP9J1wP-iipIp9IYXBB4tEu75BpKe111W00)
+ ![](http://www.plantuml.com/plantuml/img/dP0n2y9038Nt-nLlrC4_q45Qj6Erq1OKN8ADzA3D7NUHuh_t2e9E3jsIVCbxvELHAUXp6etf8WVizjWqomZjm2Yy7-sTr3hPVlYoa2femlI3aQ5hIjJ1UGvgEMAsEY3InAZ82ef-ic9CzcsofFP7hhpWUkvmA4utQGF98zbNJlYrKkF8taMhAw-NR_f0CwMaSfO-HVO6)
  
  
  
