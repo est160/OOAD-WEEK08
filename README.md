@@ -26,12 +26,25 @@ User --> (Use the application) : USE Properties with same Main Admin
  
  
  
+#code
+
+@startuml
+
+:BOSS: -left-> (POGDENGPLAYER1Left) 
+
+:BOSS: -right-> (POGDENGPLAYER3Right) 
+
+:BOSS: -up-> (POGDENGPLAYER2Up)
+
+:BOSS: -down-> (POGDENGPLAYER4Down)
+
+@enduml
 
                    PIC 2 CASE POGDENG
                    
                    
                    
- ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuR9oyWyEjbBGpKbDAz6rKz08o4ciJ2qAy7TtSVLpD_G1Ycegm1KLPQPdOAeo3W898oahBS1GOnHQe0cNJyalpyDGOU825DNaSaZDIm6w2m00)
+ ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuR9oyWyEjbBGpKbDAz6rKz08y7TtSVLp3_1nZ7GDClG1Ycegm1KLPQPdOAeo3W898oahBS1GOnHQe0cNJyalpyDGOU825DNaSaZDIm6w2m00)
  
  
  
