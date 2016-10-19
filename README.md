@@ -65,12 +65,37 @@ User --> (Use the application) : USE Properties with same Main Admin
  
  
  
- 
+#code
+
+@startuml
+
+left to right direction
+
+skinparam packageStyle rect
+
+actor customer
+
+actor shopkeeper
+
+rectangle 7eleven {
+
+  customer -- (shopping)
+  
+  (shopping) .> (payment) : include
+  
+  (help) .> (shopping) : query
+  
+  (shopping) -- shopkeeper
+  
+}
+
+@enduml
+
                    PIC 5
                    
                    
                    
- ![](http://www.plantuml.com/plantuml/img/LO-n3i8m44FtV8N7CfGFO40LFy30n7XAZoPAcaJ9LQ92_3k901Msi_radOSYb6MPlV9y4qX4jfCHZ3Qp5Xk3Aiw6H9bc9DAE9hx8wXajLgGbPfpEryzLJ4oEEN5MBQSmLL8RrYukWeT2Oz7twBxchdgRmFw8Bj4wSwZY01kqNqPkZ66Vtlb67y1tuJ2M_vBQ__F8KmqLgGjV)
+ ![](http://www.plantuml.com/plantuml/img/LOyn3i8m34NtdC9ZEvGLgGFg7JY1bPeqQkA4n46gAkvE8X25yV_tz6LFMJ19yKuvkWb8W6JD8Z3RH5fiO9LNon4JUeYeLpHqbSqHDAnGIqYWIvRWANrYNa9SYM8jceHigducHmzYs1LyVHW6w9eTBPk-WYF0wG9TnCqJImyZMDQkpDISXLnyyyCUuLueRVyJTVtdbAUQYEVww0i0)
  
  
  
