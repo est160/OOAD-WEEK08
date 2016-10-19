@@ -57,13 +57,7 @@ User --> (Use the application) : USE Properties with same Main Admin
  
  
  
-                   PIC 4
-                   
-                   
-                   
- ![](http://www.plantuml.com/plantuml/img/JOwn3i8m44FtV8L7El03LHKLnC1ITOWO60yugP7Ij93hmD_JkoB1QFl9Tbk4NhACoHtxAve6vsMa3EzTtL7CE97GZGhNe8Bk7Pv9eSCyftWdYPEXkw0bbIPzPeHX4hClXI43WtvufJqQ66qJAsdZUuzlqIPLA-ZSjljdj9mVw-SF)
- 
- 
+                 
  
 #code
 
@@ -91,11 +85,46 @@ rectangle 7eleven {
 
 @enduml
 
-                   PIC 5 CASE 7eleven
+                   PIC 4 CASE 7eleven
                    
                    
                    
  ![](http://www.plantuml.com/plantuml/img/LOyn3i8m34NtdC9ZEvGLgGFg7JY1bPeqQkA4n46gAkvE8X25yV_tz6LFMJ19yKuvkWb8W6JD8Z3RH5fiO9LNon4JUeYeLpHqbSqHDAnGIqYWIvRWANrYNa9SYM8jceHigducHmzYs1LyVHW6w9eTBPk-WYF0wG9TnCqJImyZMDQkpDISXLnyyyCUuLueRVyJTVtdbAUQYEVww0i0)
  
+ 
+ 
+ #code
+ 
+ @startuml
+
+left to right direction
+
+skinparam packageStyle rect
+
+actor tourist
+
+actor clerk
+
+rectangle travel {
+
+  tourist -- (checkpassport)
+  
+  (checkpassport) .> (checkbaggage) : query
+  
+  (checkbaggage) .> (Waiting for a flight) : wait
+  
+  (help) .> (checkpassport) : extends
+  
+  (checkpassport) -- clerk
+  
+}
+
+@enduml
+
+
+                 PIC 5 Travel
+                 
+                 
+![](http://www.plantuml.com/plantuml/img/RP0n3i8m34NtdC8Z7Se1611tO60smKsZX3GuBb0XxeuZe234cF_VZx-zAO8iup6QI9s03C3UzG87psJ53ycKu5D6nYDaj04TRMMA1DKsQ6LW3Otio_jb8t4mrSRa51J6CqMu6NY3qBQmi3tPaB6KFB0qQluei5o_f3qwfsCRMC5f99vcTZOgkaClFZdej0925-iMDN9HlIPwYldhqy-S5T1LA1tAdmvQzBdEtMmKqJCz0000)
  
  
